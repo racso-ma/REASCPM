@@ -35,7 +35,21 @@ main{max-width:1400px;margin:0 auto;padding:26px 22px 90px}
 .section-title h2{font-size:18px;font-weight:800;color:var(--blue-dark);letter-spacing:-.01em}
 .section-title .sub{font-size:12px;color:var(--text-dim);margin-top:2px}
 /* ===== STOCK GRID ===== */
-.stock-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:44px}
+.stock-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.top-layout{display:grid;grid-template-columns:1fr 260px;gap:22px;margin-bottom:44px;align-items:start}
+@media(max-width:880px){.top-layout{grid-template-columns:1fr}}
+.sidebar-title{font-size:13px;font-weight:800;color:var(--blue-dark);letter-spacing:-.01em;margin-bottom:12px;padding-top:2px}
+.top-sidebar{display:flex;flex-direction:column;gap:10px;position:sticky;top:76px}
+.ingreso-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:12px;box-shadow:var(--shadow)}
+.ingreso-head{display:flex;justify-content:space-between;align-items:baseline;gap:6px;margin-bottom:3px}
+.ingreso-guia{font-family:'IBM Plex Mono',monospace;font-weight:700;color:var(--blue-dark);font-size:12.5px}
+.ingreso-fecha{font-size:9.5px;color:var(--text-dim);white-space:nowrap}
+.ingreso-oc{font-size:10.5px;color:var(--blue);font-weight:600;margin-bottom:7px}
+.ingreso-oc span{color:var(--text-dim);font-weight:500}
+.ingreso-items{font-size:11px;color:var(--text-muted);display:flex;flex-direction:column;gap:3px;border-top:1px dashed var(--border);padding-top:7px}
+.ingreso-item-row{display:flex;justify-content:space-between;gap:8px}
+.ingreso-item-row b{color:var(--text);font-weight:600}
+.ingreso-empty{font-size:11.5px;color:var(--text-dim);background:var(--surface);border:1px dashed var(--border);border-radius:var(--radius);padding:14px;text-align:center}
 .stock-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);transition:transform .15s, box-shadow .15s;position:relative;overflow:hidden}
 .stock-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
 .stock-card.low{border-color:var(--rojo-border)}
@@ -144,10 +158,18 @@ table.stats td.zero{color:var(--gray-300)}
 </header>
 
 <main>
-  <div class="section-title">
-    <div><h2>📦 Panorama de Stock</h2><div class="sub">Existencias actuales por insumo</div></div>
+  <div class="top-layout">
+    <div class="top-main">
+      <div class="section-title">
+        <div><h2>📦 Panorama de Stock</h2><div class="sub">Existencias actuales por insumo</div></div>
+      </div>
+      <div class="stock-grid" id="stock-grid"></div>
+    </div>
+    <aside class="top-sidebar">
+      <div class="sidebar-title">📥 Últimos Ingresos</div>
+      <div id="ultimos-ingresos"></div>
+    </aside>
   </div>
-  <div class="stock-grid" id="stock-grid"></div>
 
   <div class="section-title">
     <div><h2>📊 Consumo por Servicio</h2><div class="sub">Promedio de unidades consumidas por período, según movimientos registrados</div></div>
@@ -189,6 +211,7 @@ table.stats td.zero{color:var(--gray-300)}
     <div class="panel">
       <h3>📥 Registrar Entrada (Guía de Despacho)</h3>
       <div class="field"><label>N° de Guía</label><input id="in-guia" placeholder="Ej: 336884"></div>
+      <div class="field"><label>N° Orden de Compra (OC)</label><input id="in-oc" placeholder="Ej: 19144"></div>
       <div class="field"><label>Fecha</label><input id="in-fecha" type="date"></div>
       <div id="in-lines"></div>
       <button class="add-line-btn" onclick="addLine('in-lines')">+ Agregar insumo</button>
@@ -395,7 +418,7 @@ async function cargarDatos() {
     setSync('⚠️ error al cargar datos', true);
     stock = {}; INSUMOS.forEach(i => stock[i.id] = 0);
   }
-  renderStock(); renderStats(); renderLog();
+  renderStock(); renderStats(); renderLog(); renderUltimosIngresos();
   setTimeout(updateTokenStatus, 100);
 }
 
@@ -574,6 +597,7 @@ function nombreInsumo(id) { const f = INSUMOS.find(i => i.id === id); return f ?
 
 async function registrarEntrada() {
   const guia = document.getElementById('in-guia').value.trim();
+  const oc = document.getElementById('in-oc').value.trim();
   const fecha = document.getElementById('in-fecha').value;
   if (!fecha) { showToast('⚠️ Ingresa la fecha', 'warn'); return; }
   const lineas = readLines('in-lines');
@@ -584,12 +608,13 @@ async function registrarEntrada() {
       id: Date.now() + '-' + Math.random().toString(36).slice(2,7),
       ts: new Date().toLocaleString('es-CL'),
       tipo: 'entrada', insumoId: l.insumoId, cantidad: l.cant,
-      guia: guia || '—', fecha
+      guia: guia || '—', oc: oc || '', fecha
     });
   });
   await guardarStock(); await guardarMovimientos();
-  renderStock(); renderStats(); renderLog(); renderStockSetList();
+  renderStock(); renderStats(); renderLog(); renderStockSetList(); renderUltimosIngresos();
   document.getElementById('in-guia').value = '';
+  document.getElementById('in-oc').value = '';
   document.getElementById('in-lines').innerHTML = ''; addLine('in-lines');
   showToast('✅ Entrada registrada — Guía ' + (guia || 's/n'));
 }
@@ -666,11 +691,46 @@ function renderLog() {
   }).join('');
 }
 
+function getUltimosIngresos(n) {
+  const groups = [];
+  const seen = {};
+  movimientos.forEach(m => {
+    if (m.tipo !== 'entrada') return;
+    const key = (m.guia || '—') + '|' + (m.fecha || '');
+    if (!seen[key]) {
+      seen[key] = { guia: m.guia || '—', oc: m.oc || '', fecha: m.fecha || '', items: [] };
+      groups.push(seen[key]);
+    }
+    seen[key].items.push({ insumoId: m.insumoId, cantidad: m.cantidad });
+  });
+  return groups.slice(0, n);
+}
+
+function renderUltimosIngresos() {
+  const cont = document.getElementById('ultimos-ingresos');
+  if (!cont) return;
+  const ingresos = getUltimosIngresos(2);
+  if (!ingresos.length) {
+    cont.innerHTML = '<div class="ingreso-empty">Aún no se registran ingresos.</div>';
+    return;
+  }
+  cont.innerHTML = ingresos.map(g => {
+    const itemsHtml = g.items.map(it =>
+      '<div class="ingreso-item-row"><span>' + nombreInsumo(it.insumoId) + '</span><b>' + it.cantidad + '</b></div>'
+    ).join('');
+    return '<div class="ingreso-card">'
+      + '<div class="ingreso-head"><span class="ingreso-guia">Guía ' + g.guia + '</span><span class="ingreso-fecha">' + (g.fecha || '') + '</span></div>'
+      + '<div class="ingreso-oc">' + (g.oc ? 'OC ' + g.oc : '<span>Sin OC registrada</span>') + '</div>'
+      + '<div class="ingreso-items">' + itemsHtml + '</div>'
+      + '</div>';
+  }).join('');
+}
+
 function exportLogCSV() {
   if (!movimientos.length) { showToast('⚠️ No hay movimientos para exportar', 'warn'); return; }
-  const header = 'Fecha/Hora,Tipo,Insumo,Cantidad,Servicio,Guía,Fecha mov.';
+  const header = 'Fecha/Hora,Tipo,Insumo,Cantidad,Servicio,Guía,OC,Fecha mov.';
   const rows = movimientos.map(m => [
-    m.ts, m.tipo, nombreInsumo(m.insumoId), m.cantidad, m.servicio || '', m.guia || '', m.fecha || ''
+    m.ts, m.tipo, nombreInsumo(m.insumoId), m.cantidad, m.servicio || '', m.guia || '', m.oc || '', m.fecha || ''
   ].map(v => '"' + String(v).replace(/"/g,'""') + '"').join(','));
   const csv = [header, ...rows].join('\r\n');
   const a = document.createElement('a');
