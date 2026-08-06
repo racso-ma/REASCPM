@@ -1,5 +1,50 @@
 [
   {
+    "id": "1786047298123-e1lg8",
+    "ts": "06-08-2026, 4:14:58 p. m.",
+    "tipo": "entrada",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 200,
+    "guia": "338334",
+    "fecha": "2026-08-06"
+  },
+  {
+    "id": "1786047298123-3t7w0",
+    "ts": "06-08-2026, 4:14:58 p. m.",
+    "tipo": "entrada",
+    "insumoId": "bolsa60ro_farm",
+    "cantidad": 200,
+    "guia": "338334",
+    "fecha": "2026-08-06"
+  },
+  {
+    "id": "1786047298123-hi9ap",
+    "ts": "06-08-2026, 4:14:58 p. m.",
+    "tipo": "entrada",
+    "insumoId": "bolsa65ro_cito",
+    "cantidad": 200,
+    "guia": "338334",
+    "fecha": "2026-08-06"
+  },
+  {
+    "id": "1786047298123-mxsyn",
+    "ts": "06-08-2026, 4:14:58 p. m.",
+    "tipo": "entrada",
+    "insumoId": "bolsa65ro_pel",
+    "cantidad": 200,
+    "guia": "338334",
+    "fecha": "2026-08-06"
+  },
+  {
+    "id": "1786047298123-karui",
+    "ts": "06-08-2026, 4:14:58 p. m.",
+    "tipo": "entrada",
+    "insumoId": "bolsa60am",
+    "cantidad": 200,
+    "guia": "338334",
+    "fecha": "2026-08-06"
+  },
+  {
     "id": "1786046968030-ei36g",
     "ts": "06-08-2026, 4:09:28 p. m.",
     "tipo": "entrada",
