@@ -1,7 +1,7 @@
 {
   "bolsa60am": 0,
-  "bolsa80am": 0,
-  "bolsa80am_inc": 0,
+  "bolsa80am": 300,
+  "bolsa80am_inc": 300,
   "bolsa65ro_pel": 200,
   "bolsa65ro_cito": 0,
   "bolsa80ro_cito": 200,
