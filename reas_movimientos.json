@@ -65,7 +65,8 @@
     "insumoId": "bolsa80am_inc",
     "cantidad": 200,
     "guia": "338334",
-    "fecha": "2026-08-06"
+    "fecha": "2026-08-06",
+    "oc": "19440"
   },
   {
     "id": "1786047298123-3t7w0",
@@ -74,7 +75,8 @@
     "insumoId": "bolsa60ro_farm",
     "cantidad": 200,
     "guia": "338334",
-    "fecha": "2026-08-06"
+    "fecha": "2026-08-06",
+    "oc": "19440"
   },
   {
     "id": "1786047298123-hi9ap",
@@ -83,7 +85,8 @@
     "insumoId": "bolsa65ro_cito",
     "cantidad": 200,
     "guia": "338334",
-    "fecha": "2026-08-06"
+    "fecha": "2026-08-06",
+    "oc": "19440"
   },
   {
     "id": "1786047298123-mxsyn",
@@ -92,7 +95,8 @@
     "insumoId": "bolsa65ro_pel",
     "cantidad": 200,
     "guia": "338334",
-    "fecha": "2026-08-06"
+    "fecha": "2026-08-06",
+    "oc": "19440"
   },
   {
     "id": "1786047298123-karui",
@@ -101,7 +105,8 @@
     "insumoId": "bolsa60am",
     "cantidad": 200,
     "guia": "338334",
-    "fecha": "2026-08-06"
+    "fecha": "2026-08-06",
+    "oc": "19440"
   },
   {
     "id": "1786046968030-ei36g",
