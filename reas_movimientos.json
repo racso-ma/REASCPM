@@ -1,5 +1,14 @@
 [
   {
+    "id": "1786387285183-cnlc1",
+    "ts": "10-08-2026, 2:41:25 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 50,
+    "servicio": "Hospitalizados 3°",
+    "fecha": "2026-08-10"
+  },
+  {
     "id": "1786387265841-gi2up",
     "ts": "10-08-2026, 2:41:05 p. m.",
     "tipo": "salida",
