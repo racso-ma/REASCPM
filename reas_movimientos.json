@@ -1,5 +1,23 @@
 [
   {
+    "id": "1786387245801-975ot",
+    "ts": "10-08-2026, 2:40:45 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro01am",
+    "cantidad": 2,
+    "servicio": "Oftalmontt",
+    "fecha": "2026-08-10"
+  },
+  {
+    "id": "1786387245801-9wequ",
+    "ts": "10-08-2026, 2:40:45 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 2,
+    "servicio": "Oftalmontt",
+    "fecha": "2026-08-10"
+  },
+  {
     "id": "1786387059166-nvyb5",
     "ts": "10-08-2026, 2:37:39 p. m.",
     "tipo": "ajuste",
