@@ -232,6 +232,17 @@ table.stats td.zero{color:var(--gray-300)}
     </div>
 
     <div class="panel">
+      <h3>✏️ Editar Guía / OC ya ingresada</h3>
+      <div class="field">
+        <label>Selecciona el ingreso</label>
+        <select id="edit-ing-select" onchange="cargarIngresoParaEditar()"></select>
+      </div>
+      <div class="field"><label>N° de Guía</label><input id="edit-ing-guia" placeholder="Ej: 336884"></div>
+      <div class="field"><label>N° Orden de Compra (OC)</label><input id="edit-ing-oc" placeholder="Ej: 19144"></div>
+      <button class="btn btn-primary" style="width:100%" onclick="guardarEdicionIngreso()">Guardar cambios</button>
+    </div>
+
+    <div class="panel">
       <h3>🛠️ Ajuste manual de stock</h3>
       <div id="stock-set-list"></div>
     </div>
@@ -570,6 +581,7 @@ function initAdminForms() {
   servSel.innerHTML = SERVICIOS.map(s => '<option value="' + s + '">' + s + '</option>').join('');
   renderStockSetList();
   renderLog();
+  populateEditIngresoSelect();
 }
 function todayISO() { return new Date().toISOString().slice(0,10); }
 
@@ -724,6 +736,64 @@ function renderUltimosIngresos() {
       + '<div class="ingreso-items">' + itemsHtml + '</div>'
       + '</div>';
   }).join('');
+}
+
+// ================== EDITAR GUÍA / OC DE UN INGRESO YA REGISTRADO ==================
+let edicionIngresoKeyActual = null;
+
+function populateEditIngresoSelect() {
+  const sel = document.getElementById('edit-ing-select');
+  if (!sel) return;
+  const ingresos = getUltimosIngresos(30); // últimos 30 ingresos distintos
+  if (!ingresos.length) {
+    sel.innerHTML = '<option value="">— No hay ingresos registrados —</option>';
+    document.getElementById('edit-ing-guia').value = '';
+    document.getElementById('edit-ing-oc').value = '';
+    edicionIngresoKeyActual = null;
+    return;
+  }
+  sel.innerHTML = ingresos.map(g => {
+    const key = g.guia + '|' + g.fecha;
+    const label = 'Guía ' + g.guia + ' · ' + (g.fecha || 's/fecha') + ' · ' + (g.oc ? 'OC ' + g.oc : 'sin OC');
+    return '<option value="' + key.replace(/"/g,'&quot;') + '">' + label + '</option>';
+  }).join('');
+  cargarIngresoParaEditar();
+}
+
+function cargarIngresoParaEditar() {
+  const sel = document.getElementById('edit-ing-select');
+  if (!sel || !sel.value) return;
+  edicionIngresoKeyActual = sel.value;
+  const idx = sel.value.lastIndexOf('|');
+  const guia = sel.value.slice(0, idx);
+  const fecha = sel.value.slice(idx + 1);
+  const m = movimientos.find(m => m.tipo === 'entrada' && (m.guia || '—') === guia && (m.fecha || '') === fecha);
+  document.getElementById('edit-ing-guia').value = (m && m.guia) || '';
+  document.getElementById('edit-ing-oc').value = (m && m.oc) || '';
+}
+
+async function guardarEdicionIngreso() {
+  if (!edicionIngresoKeyActual) { showToast('⚠️ Selecciona un ingreso', 'warn'); return; }
+  const idx = edicionIngresoKeyActual.lastIndexOf('|');
+  const guiaOriginal = edicionIngresoKeyActual.slice(0, idx);
+  const fechaOriginal = edicionIngresoKeyActual.slice(idx + 1);
+  const nuevaGuia = document.getElementById('edit-ing-guia').value.trim();
+  const nuevaOc = document.getElementById('edit-ing-oc').value.trim();
+  if (!nuevaGuia) { showToast('⚠️ La guía no puede quedar vacía', 'warn'); return; }
+
+  let afectados = 0;
+  movimientos.forEach(m => {
+    if (m.tipo === 'entrada' && (m.guia || '—') === guiaOriginal && (m.fecha || '') === fechaOriginal) {
+      m.guia = nuevaGuia;
+      m.oc = nuevaOc;
+      afectados++;
+    }
+  });
+  if (!afectados) { showToast('⚠️ No se encontró ese ingreso', 'warn'); return; }
+
+  await guardarMovimientos();
+  renderLog(); renderUltimosIngresos(); populateEditIngresoSelect();
+  showToast('✅ Guía/OC actualizada (' + afectados + ' línea' + (afectados>1?'s':'') + ')');
 }
 
 function exportLogCSV() {
