@@ -1,5 +1,14 @@
 [
   {
+    "id": "1786462802292-op4z5",
+    "ts": "11-08-2026, 11:40:02 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro10ro",
+    "cantidad": 3,
+    "servicio": "Pabellón Ambulatorio",
+    "fecha": "2026-08-11"
+  },
+  {
     "id": "1786455760043-j8btt",
     "ts": "11-08-2026, 9:42:40 a. m.",
     "tipo": "salida",
