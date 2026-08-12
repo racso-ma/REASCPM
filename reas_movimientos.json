@@ -1,5 +1,14 @@
 [
   {
+    "id": "1786553737930-bkxue",
+    "ts": "12-08-2026, 12:55:37 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 75,
+    "servicio": "Urgencia",
+    "fecha": "2026-08-12"
+  },
+  {
     "id": "1786465787688-79m7f",
     "ts": "11-08-2026, 12:29:47 p. m.",
     "tipo": "salida",
