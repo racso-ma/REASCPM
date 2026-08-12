@@ -1,5 +1,14 @@
 [
   {
+    "id": "1786560240436-ofbha",
+    "ts": "12-08-2026, 2:44:00 p. m.",
+    "tipo": "devolucion",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 50,
+    "servicio": "UPC",
+    "fecha": "2026-08-12"
+  },
+  {
     "id": "1786553792031-5ocw0",
     "ts": "12-08-2026, 12:56:32 p. m.",
     "tipo": "salida",
