@@ -248,9 +248,14 @@ table.stats td.zero{color:var(--gray-300)}
     </div>
 
     <div class="panel">
-      <h3>🕓 Últimos 5 movimientos</h3>
-      <div id="log-list"></div>
+      <h3>📤 Salidas — Semana actual (Lun-Vie)</h3>
+      <div id="log-salidas"></div>
       <button class="mini-btn" style="margin-top:6px;width:100%" onclick="exportLogCSV()">⬇ Exportar historial completo (CSV)</button>
+    </div>
+
+    <div class="panel">
+      <h3>📥 Ingresos y Devoluciones — Semana actual (Lun-Vie)</h3>
+      <div id="log-ingresos-dev"></div>
     </div>
 
   </div>
@@ -689,17 +694,59 @@ async function ajustarStock(id) {
   showToast('✅ Stock de "' + nombreInsumo(id) + '" ajustado a ' + nuevo);
 }
 
-// ================== LOG ==================
+// ================== LOG — SEMANA ACTUAL (LUN-VIE) ==================
+function getSemanaActualRange() {
+  const now = new Date();
+  const day = now.getDay(); // 0=Dom,1=Lun,...6=Sáb
+  const diffToMonday = (day === 0) ? -6 : (1 - day);
+  const monday = new Date(now.getFullYear(), now.getMonth(), now.getDate() + diffToMonday);
+  monday.setHours(0,0,0,0);
+  const friday = new Date(monday);
+  friday.setDate(monday.getDate() + 4);
+  friday.setHours(23,59,59,999);
+  return { monday, friday };
+}
+function enSemanaActual(fechaStr) {
+  if (!fechaStr) return false;
+  const d = new Date(fechaStr + 'T12:00:00');
+  if (isNaN(d)) return false;
+  const { monday, friday } = getSemanaActualRange();
+  return d >= monday && d <= friday;
+}
+function rangoSemanaLabel() {
+  const { monday, friday } = getSemanaActualRange();
+  const fmt = d => d.toLocaleDateString('es-CL', { day: '2-digit', month: '2-digit' });
+  return fmt(monday) + ' al ' + fmt(friday);
+}
+
 function renderLog() {
-  const cont = document.getElementById('log-list');
+  renderLogSalidas();
+  renderLogIngresosDev();
+}
+
+function renderLogSalidas() {
+  const cont = document.getElementById('log-salidas');
   if (!cont) return;
-  if (!movimientos.length) { cont.innerHTML = '<div style="color:var(--text-dim);font-size:12px">Sin movimientos aún.</div>'; return; }
-  const ultimos = movimientos.slice(0, 5);
-  const labelTipo = {entrada:'📥 Entrada', salida:'📤 Salida', devolucion:'↩️ Devolución', ajuste:'🛠️ Ajuste'};
-  cont.innerHTML = ultimos.map(m => {
+  const items = movimientos.filter(m => m.tipo === 'salida' && enSemanaActual(m.fecha));
+  const header = '<div style="font-size:10px;color:var(--text-dim);margin-bottom:8px;font-family:\'IBM Plex Mono\',monospace">Semana ' + rangoSemanaLabel() + '</div>';
+  if (!items.length) { cont.innerHTML = header + '<div style="color:var(--text-dim);font-size:12px">Sin salidas esta semana.</div>'; return; }
+  cont.innerHTML = header + items.map(m => {
+    const detalle = nombreInsumo(m.insumoId) + ' · ' + Math.abs(m.cantidad) + ' un. · ' + (m.servicio || '');
+    return '<div class="log-item li-salida"><div><div class="li-main">📤 ' + detalle + '</div></div><div class="li-time">' + m.ts + '</div></div>';
+  }).join('');
+}
+
+function renderLogIngresosDev() {
+  const cont = document.getElementById('log-ingresos-dev');
+  if (!cont) return;
+  const items = movimientos.filter(m => (m.tipo === 'entrada' || m.tipo === 'devolucion') && enSemanaActual(m.fecha));
+  const labelTipo = {entrada:'📥 Entrada', devolucion:'↩️ Devolución'};
+  const header = '<div style="font-size:10px;color:var(--text-dim);margin-bottom:8px;font-family:\'IBM Plex Mono\',monospace">Semana ' + rangoSemanaLabel() + '</div>';
+  if (!items.length) { cont.innerHTML = header + '<div style="color:var(--text-dim);font-size:12px">Sin ingresos ni devoluciones esta semana.</div>'; return; }
+  cont.innerHTML = header + items.map(m => {
     let detalle = nombreInsumo(m.insumoId) + ' · ' + Math.abs(m.cantidad) + ' un.';
-    if (m.tipo === 'entrada') detalle += ' · Guía ' + m.guia;
-    if (m.tipo === 'salida' || m.tipo === 'devolucion') detalle += ' · ' + m.servicio;
+    if (m.tipo === 'entrada') detalle += ' · Guía ' + m.guia + (m.oc ? ' · OC ' + m.oc : '');
+    if (m.tipo === 'devolucion') detalle += ' · ' + (m.servicio || '');
     return '<div class="log-item li-' + m.tipo + '"><div><div class="li-main">' + labelTipo[m.tipo] + ' — ' + detalle + '</div></div><div class="li-time">' + m.ts + '</div></div>';
   }).join('');
 }
