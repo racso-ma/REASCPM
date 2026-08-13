@@ -1,5 +1,23 @@
 [
   {
+    "id": "1786637066090-g4flz",
+    "ts": "13-08-2026, 12:04:26 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro01am",
+    "cantidad": 3,
+    "servicio": "UPC",
+    "fecha": "2026-08-13"
+  },
+  {
+    "id": "1786637066090-bjmqr",
+    "ts": "13-08-2026, 12:04:26 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 3,
+    "servicio": "UPC",
+    "fecha": "2026-08-13"
+  },
+  {
     "id": "1786624490907-drwn6",
     "ts": "13-08-2026, 8:34:50 a. m.",
     "tipo": "salida",
