@@ -1,5 +1,14 @@
 [
   {
+    "id": "1786624490907-drwn6",
+    "ts": "13-08-2026, 8:34:50 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 2,
+    "servicio": "Pabellón Quirúrgico",
+    "fecha": "2026-08-12"
+  },
+  {
     "id": "1786560240436-ofbha",
     "ts": "12-08-2026, 2:44:00 p. m.",
     "tipo": "devolucion",
