@@ -38,6 +38,9 @@ main{max-width:1400px;margin:0 auto;padding:26px 22px 90px}
 .stock-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
 .top-layout{display:grid;grid-template-columns:1fr 260px;gap:22px;margin-bottom:44px;align-items:start}
 @media(max-width:880px){.top-layout{grid-template-columns:1fr}}
+.week-layout{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:44px}
+@media(max-width:680px){.week-layout{grid-template-columns:1fr}}
+.panel-h3{font-size:14px;font-weight:800;color:var(--blue-dark);margin-bottom:14px;display:flex;align-items:center;gap:7px}
 .sidebar-title{font-size:13px;font-weight:800;color:var(--blue-dark);letter-spacing:-.01em;margin-bottom:12px;padding-top:2px}
 .top-sidebar{display:flex;flex-direction:column;gap:10px;position:sticky;top:76px}
 .ingreso-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:12px;box-shadow:var(--shadow)}
@@ -172,6 +175,21 @@ table.stats td.zero{color:var(--gray-300)}
   </div>
 
   <div class="section-title">
+    <div><h2>🔁 Movimientos de la Semana</h2><div class="sub">Salidas y devoluciones a servicios · lunes a viernes, semana actual</div></div>
+  </div>
+  <div class="week-layout">
+    <div class="panel">
+      <h3 class="panel-h3">📤 Salidas</h3>
+      <div id="log-salidas"></div>
+      <button class="mini-btn" style="margin-top:10px;width:100%" onclick="exportLogCSV()">⬇ Exportar historial completo (CSV)</button>
+    </div>
+    <div class="panel">
+      <h3 class="panel-h3">↩️ Devoluciones</h3>
+      <div id="log-devoluciones"></div>
+    </div>
+  </div>
+
+  <div class="section-title">
     <div><h2>📊 Consumo por Servicio</h2><div class="sub">Promedio de unidades consumidas por período, según movimientos registrados</div></div>
     <div class="stats-toggle">
       <button id="btn-semana" class="active" onclick="setPeriodo('semana')">Promedio semanal</button>
@@ -245,17 +263,6 @@ table.stats td.zero{color:var(--gray-300)}
     <div class="panel">
       <h3>🛠️ Ajuste manual de stock</h3>
       <div id="stock-set-list"></div>
-    </div>
-
-    <div class="panel">
-      <h3>📤 Salidas — Semana actual (Lun-Vie)</h3>
-      <div id="log-salidas"></div>
-      <button class="mini-btn" style="margin-top:6px;width:100%" onclick="exportLogCSV()">⬇ Exportar historial completo (CSV)</button>
-    </div>
-
-    <div class="panel">
-      <h3>📥 Ingresos y Devoluciones — Semana actual (Lun-Vie)</h3>
-      <div id="log-ingresos-dev"></div>
     </div>
 
   </div>
@@ -721,7 +728,7 @@ function rangoSemanaLabel() {
 
 function renderLog() {
   renderLogSalidas();
-  renderLogIngresosDev();
+  renderLogDevoluciones();
 }
 
 function renderLogSalidas() {
@@ -736,18 +743,15 @@ function renderLogSalidas() {
   }).join('');
 }
 
-function renderLogIngresosDev() {
-  const cont = document.getElementById('log-ingresos-dev');
+function renderLogDevoluciones() {
+  const cont = document.getElementById('log-devoluciones');
   if (!cont) return;
-  const items = movimientos.filter(m => (m.tipo === 'entrada' || m.tipo === 'devolucion') && enSemanaActual(m.fecha));
-  const labelTipo = {entrada:'📥 Entrada', devolucion:'↩️ Devolución'};
+  const items = movimientos.filter(m => m.tipo === 'devolucion' && enSemanaActual(m.fecha));
   const header = '<div style="font-size:10px;color:var(--text-dim);margin-bottom:8px;font-family:\'IBM Plex Mono\',monospace">Semana ' + rangoSemanaLabel() + '</div>';
-  if (!items.length) { cont.innerHTML = header + '<div style="color:var(--text-dim);font-size:12px">Sin ingresos ni devoluciones esta semana.</div>'; return; }
+  if (!items.length) { cont.innerHTML = header + '<div style="color:var(--text-dim);font-size:12px">Sin devoluciones esta semana.</div>'; return; }
   cont.innerHTML = header + items.map(m => {
-    let detalle = nombreInsumo(m.insumoId) + ' · ' + Math.abs(m.cantidad) + ' un.';
-    if (m.tipo === 'entrada') detalle += ' · Guía ' + m.guia + (m.oc ? ' · OC ' + m.oc : '');
-    if (m.tipo === 'devolucion') detalle += ' · ' + (m.servicio || '');
-    return '<div class="log-item li-' + m.tipo + '"><div><div class="li-main">' + labelTipo[m.tipo] + ' — ' + detalle + '</div></div><div class="li-time">' + m.ts + '</div></div>';
+    const detalle = nombreInsumo(m.insumoId) + ' · ' + Math.abs(m.cantidad) + ' un. · ' + (m.servicio || '');
+    return '<div class="log-item li-devolucion"><div><div class="li-main">↩️ Devolución — ' + detalle + '</div></div><div class="li-time">' + m.ts + '</div></div>';
   }).join('');
 }
 
