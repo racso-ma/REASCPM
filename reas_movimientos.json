@@ -1,5 +1,14 @@
 [
   {
+    "id": "1786998917828-vkifz",
+    "ts": "17-08-2026, 4:35:17 p. m.",
+    "tipo": "devolucion",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 27,
+    "servicio": "Recuperación",
+    "fecha": "2026-08-17"
+  },
+  {
     "id": "1786997639920-lepxc",
     "ts": "17-08-2026, 4:13:59 p. m.",
     "tipo": "salida",
