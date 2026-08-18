@@ -1,5 +1,14 @@
 [
   {
+    "id": "1787061383600-6j3sy",
+    "ts": "18-08-2026, 9:56:23 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 30,
+    "servicio": "UPC",
+    "fecha": "2026-08-18"
+  },
+  {
     "id": "1786998917828-vkifz",
     "ts": "17-08-2026, 4:35:17 p. m.",
     "tipo": "devolucion",
