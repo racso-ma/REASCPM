@@ -1,5 +1,23 @@
 [
   {
+    "id": "1787068129193-6ffp9",
+    "ts": "18-08-2026, 11:48:49 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 2,
+    "servicio": "Pabellón Quirúrgico",
+    "fecha": "2026-08-18"
+  },
+  {
+    "id": "1787068129193-w28ws",
+    "ts": "18-08-2026, 11:48:49 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro46am",
+    "cantidad": 2,
+    "servicio": "Pabellón Quirúrgico",
+    "fecha": "2026-08-18"
+  },
+  {
     "id": "1787061383600-6j3sy",
     "ts": "18-08-2026, 9:56:23 a. m.",
     "tipo": "salida",
