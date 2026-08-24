@@ -1,5 +1,14 @@
 [
   {
+    "id": "1787586904148-81pgr",
+    "ts": "24-08-2026, 11:55:04 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 2,
+    "servicio": "Pabellón Quirúrgico",
+    "fecha": "2026-08-24"
+  },
+  {
     "id": "1787342859791-7912u",
     "ts": "21-08-2026, 4:07:39 p. m.",
     "tipo": "salida",
