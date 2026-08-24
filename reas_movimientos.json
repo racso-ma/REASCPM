@@ -1,5 +1,14 @@
 [
   {
+    "id": "1787598320419-fw4uu",
+    "ts": "24-08-2026, 3:05:20 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 50,
+    "servicio": "Imagenología",
+    "fecha": "2026-08-24"
+  },
+  {
     "id": "1787586904148-81pgr",
     "ts": "24-08-2026, 11:55:04 a. m.",
     "tipo": "salida",
