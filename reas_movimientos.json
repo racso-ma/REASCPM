@@ -1,5 +1,14 @@
 [
   {
+    "id": "1787662334391-ormuj",
+    "ts": "25-08-2026, 8:52:14 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro10ro",
+    "cantidad": 4,
+    "servicio": "Gastroscopia",
+    "fecha": "2026-08-25"
+  },
+  {
     "id": "1787598320419-fw4uu",
     "ts": "24-08-2026, 3:05:20 p. m.",
     "tipo": "salida",
