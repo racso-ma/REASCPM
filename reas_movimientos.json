@@ -1,5 +1,23 @@
 [
   {
+    "id": "1787667130340-rdp8d",
+    "ts": "25-08-2026, 10:12:10 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 3,
+    "servicio": "UPC",
+    "fecha": "2026-08-25"
+  },
+  {
+    "id": "1787667130340-8g6rn",
+    "ts": "25-08-2026, 10:12:10 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 50,
+    "servicio": "UPC",
+    "fecha": "2026-08-25"
+  },
+  {
     "id": "1787667114820-zw8u7",
     "ts": "25-08-2026, 10:11:54 a. m.",
     "tipo": "salida",
