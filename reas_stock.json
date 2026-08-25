@@ -1,7 +1,7 @@
 {
   "bolsa60am": 200,
   "bolsa80am": 375,
-  "bolsa80am_inc": 200,
+  "bolsa80am_inc": 150,
   "bolsa65ro_pel": 400,
   "bolsa65ro_cito": 200,
   "bolsa80ro_cito": 200,
@@ -12,6 +12,6 @@
   "pro46am": 4,
   "pro06ro": 264,
   "pro10ro": 180,
-  "pro15ro": 50,
+  "pro15ro": 47,
   "basurero25": 1
 }
