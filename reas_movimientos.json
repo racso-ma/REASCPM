@@ -1,5 +1,14 @@
 [
   {
+    "id": "1787755006073-jwcd7",
+    "ts": "26-08-2026, 10:36:46 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 2,
+    "servicio": "Hospitalizados 3°",
+    "fecha": "2026-08-26"
+  },
+  {
     "id": "1787750836889-fqtev",
     "ts": "26-08-2026, 9:27:16 a. m.",
     "tipo": "salida",
