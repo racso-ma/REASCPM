@@ -1,5 +1,14 @@
 [
   {
+    "id": "1787750836889-fqtev",
+    "ts": "26-08-2026, 9:27:16 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa60am",
+    "cantidad": 20,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-08-26"
+  },
+  {
     "id": "1787750649038-vd12x",
     "ts": "26-08-2026, 9:24:09 a. m.",
     "tipo": "salida",
