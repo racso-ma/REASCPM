@@ -1,5 +1,14 @@
 [
   {
+    "id": "1787747943909-egm9k",
+    "ts": "26-08-2026, 8:39:03 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80ro_cito",
+    "cantidad": 10,
+    "servicio": "Pabellón Ambulatorio",
+    "fecha": "2026-08-26"
+  },
+  {
     "id": "1787667130340-rdp8d",
     "ts": "25-08-2026, 10:12:10 a. m.",
     "tipo": "salida",
