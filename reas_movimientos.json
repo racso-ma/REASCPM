@@ -1,5 +1,14 @@
 [
   {
+    "id": "1787750649038-vd12x",
+    "ts": "26-08-2026, 9:24:09 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 4,
+    "servicio": "Recuperación",
+    "fecha": "2026-08-26"
+  },
+  {
     "id": "1787747943909-egm9k",
     "ts": "26-08-2026, 8:39:03 a. m.",
     "tipo": "salida",
