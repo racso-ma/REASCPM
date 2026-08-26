@@ -1,5 +1,14 @@
 [
   {
+    "id": "1787772627497-k7jt2",
+    "ts": "26-08-2026, 3:30:27 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 1,
+    "servicio": "Laboratorio",
+    "fecha": "2026-08-26"
+  },
+  {
     "id": "1787755006073-jwcd7",
     "ts": "26-08-2026, 10:36:46 a. m.",
     "tipo": "salida",
