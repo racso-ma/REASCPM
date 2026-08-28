@@ -1,5 +1,14 @@
 [
   {
+    "id": "1787924215530-jahou",
+    "ts": "28-08-2026, 9:36:55 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro01am",
+    "cantidad": 4,
+    "servicio": "Pabellón Quirúrgico",
+    "fecha": "2026-08-28"
+  },
+  {
     "id": "1787855696340-8g2cp",
     "ts": "27-08-2026, 2:34:56 p. m.",
     "tipo": "salida",
