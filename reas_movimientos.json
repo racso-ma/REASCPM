@@ -1,5 +1,25 @@
 [
   {
+    "id": "1787935682038-80t3r",
+    "ts": "28-08-2026, 12:48:02 p. m.",
+    "tipo": "entrada",
+    "insumoId": "basurero25rojo",
+    "cantidad": 1,
+    "guia": "338872",
+    "oc": "19472",
+    "fecha": "2026-08-28"
+  },
+  {
+    "id": "1787935682038-uqfl7",
+    "ts": "28-08-2026, 12:48:02 p. m.",
+    "tipo": "entrada",
+    "insumoId": "carro50gris",
+    "cantidad": 2,
+    "guia": "338872",
+    "oc": "19472",
+    "fecha": "2026-08-28"
+  },
+  {
     "id": "1787924215530-jahou",
     "ts": "28-08-2026, 9:36:55 a. m.",
     "tipo": "salida",
