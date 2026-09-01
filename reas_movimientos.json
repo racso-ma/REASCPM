@@ -1,5 +1,23 @@
 [
   {
+    "id": "1788273037487-rdvpe",
+    "ts": "01-09-2026, 10:30:37 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 3,
+    "servicio": "Pabellón Quirúrgico",
+    "fecha": "2026-09-01"
+  },
+  {
+    "id": "1788273037487-qp2r4",
+    "ts": "01-09-2026, 10:30:37 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro46am",
+    "cantidad": 4,
+    "servicio": "Pabellón Quirúrgico",
+    "fecha": "2026-09-01"
+  },
+  {
     "id": "1788273009391-hgj0f",
     "ts": "01-09-2026, 10:30:09 a. m.",
     "tipo": "salida",
