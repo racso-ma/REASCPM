@@ -1,5 +1,23 @@
 [
   {
+    "id": "1788380124796-od8zn",
+    "ts": "02-09-2026, 4:15:24 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80ro_farm",
+    "cantidad": 50,
+    "servicio": "Urgencia",
+    "fecha": "2026-09-02"
+  },
+  {
+    "id": "1788380124796-uvd9b",
+    "ts": "02-09-2026, 4:15:24 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 100,
+    "servicio": "Urgencia",
+    "fecha": "2026-09-02"
+  },
+  {
     "id": "1788380065731-sb7om",
     "ts": "02-09-2026, 4:14:25 p. m.",
     "tipo": "salida",
