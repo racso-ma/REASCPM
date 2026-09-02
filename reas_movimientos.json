@@ -1,5 +1,14 @@
 [
   {
+    "id": "1788355846207-aznn0",
+    "ts": "02-09-2026, 9:30:46 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro01am",
+    "cantidad": 4,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-09-02"
+  },
+  {
     "id": "1788291645995-ir7dx",
     "ts": "01-09-2026, 3:40:45 p. m.",
     "tipo": "salida",
