@@ -1,5 +1,65 @@
 [
   {
+    "id": "1788789003734-9fgf0",
+    "ts": "07-09-2026, 10:50:03 a. m.",
+    "tipo": "entrada",
+    "insumoId": "pro15ro",
+    "cantidad": 40,
+    "guia": "339220",
+    "oc": "11111",
+    "fecha": "2026-09-07"
+  },
+  {
+    "id": "1788789003734-pi73u",
+    "ts": "07-09-2026, 10:50:03 a. m.",
+    "tipo": "entrada",
+    "insumoId": "pro10ro",
+    "cantidad": 20,
+    "guia": "339220",
+    "oc": "11111",
+    "fecha": "2026-09-07"
+  },
+  {
+    "id": "1788789003734-uykza",
+    "ts": "07-09-2026, 10:50:03 a. m.",
+    "tipo": "entrada",
+    "insumoId": "pro06ro",
+    "cantidad": 40,
+    "guia": "339220",
+    "oc": "11111",
+    "fecha": "2026-09-07"
+  },
+  {
+    "id": "1788789003734-06zzn",
+    "ts": "07-09-2026, 10:50:03 a. m.",
+    "tipo": "entrada",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 300,
+    "guia": "339220",
+    "oc": "11111",
+    "fecha": "2026-09-07"
+  },
+  {
+    "id": "1788789003734-meuli",
+    "ts": "07-09-2026, 10:50:03 a. m.",
+    "tipo": "entrada",
+    "insumoId": "bolsa60am",
+    "cantidad": 400,
+    "guia": "339220",
+    "oc": "11111",
+    "fecha": "2026-09-07"
+  },
+  {
+    "id": "1788789003734-dq8y0",
+    "ts": "07-09-2026, 10:50:03 a. m.",
+    "tipo": "entrada",
+    "insumoId": "bolsa80am",
+    "cantidad": 400,
+    "guia": "339220",
+    "oc": "11111",
+    "fecha": "2026-09-07"
+  },
+  {
     "id": "1788788905790-uqijk",
     "ts": "07-09-2026, 10:48:25 a. m.",
     "tipo": "entrada",
