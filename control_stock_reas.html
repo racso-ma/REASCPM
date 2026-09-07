@@ -776,7 +776,7 @@ function getUltimosIngresos(n) {
 function renderUltimosIngresos() {
   const cont = document.getElementById('ultimos-ingresos');
   if (!cont) return;
-  const ingresos = getUltimosIngresos(2);
+  const ingresos = getUltimosIngresos(5);
   if (!ingresos.length) {
     cont.innerHTML = '<div class="ingreso-empty">Aún no se registran ingresos.</div>';
     return;
