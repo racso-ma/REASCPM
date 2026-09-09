@@ -1,5 +1,23 @@
 [
   {
+    "id": "1788976841407-yntnh",
+    "ts": "09-09-2026, 3:00:41 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 4,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-09-09"
+  },
+  {
+    "id": "1788976841407-ljkqn",
+    "ts": "09-09-2026, 3:00:41 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa60am",
+    "cantidad": 25,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-09-09"
+  },
+  {
     "id": "1788976824063-cd1g5",
     "ts": "09-09-2026, 3:00:24 p. m.",
     "tipo": "salida",
