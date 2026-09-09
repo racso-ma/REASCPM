@@ -1,5 +1,14 @@
 [
   {
+    "id": "1788976849343-ko9u9",
+    "ts": "09-09-2026, 3:00:49 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa60am",
+    "cantidad": 25,
+    "servicio": "Hospitalizados 3°",
+    "fecha": "2026-09-09"
+  },
+  {
     "id": "1788976841407-yntnh",
     "ts": "09-09-2026, 3:00:41 p. m.",
     "tipo": "salida",
