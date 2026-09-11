@@ -1,5 +1,23 @@
 [
   {
+    "id": "1789145266715-d8xr2",
+    "ts": "11-09-2026, 1:47:46 p. m.",
+    "tipo": "salida",
+    "insumoId": "carro50gris",
+    "cantidad": 1,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-09-10"
+  },
+  {
+    "id": "1789145266715-5k56o",
+    "ts": "11-09-2026, 1:47:46 p. m.",
+    "tipo": "salida",
+    "insumoId": "basurero25rojo",
+    "cantidad": 1,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-09-10"
+  },
+  {
     "id": "1789062823722-x4fat",
     "ts": "10-09-2026, 2:53:43 p. m.",
     "tipo": "salida",
