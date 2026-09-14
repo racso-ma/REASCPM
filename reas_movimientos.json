@@ -1,5 +1,23 @@
 [
   {
+    "id": "1789396447679-163qh",
+    "ts": "14-09-2026, 11:34:07 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 100,
+    "servicio": "Pabellón Quirúrgico",
+    "fecha": "2026-09-14"
+  },
+  {
+    "id": "1789396447679-td9be",
+    "ts": "14-09-2026, 11:34:07 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 200,
+    "servicio": "Pabellón Quirúrgico",
+    "fecha": "2026-09-14"
+  },
+  {
     "id": "1789145266715-d8xr2",
     "ts": "11-09-2026, 1:47:46 p. m.",
     "tipo": "salida",
