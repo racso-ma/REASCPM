@@ -1,5 +1,23 @@
 [
   {
+    "id": "1789486942329-27520",
+    "ts": "15-09-2026, 12:42:22 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80ro_farm",
+    "cantidad": 50,
+    "servicio": "UPC",
+    "fecha": "2026-09-15"
+  },
+  {
+    "id": "1789486942329-c7das",
+    "ts": "15-09-2026, 12:42:22 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 50,
+    "servicio": "UPC",
+    "fecha": "2026-09-15"
+  },
+  {
     "id": "1789396447679-163qh",
     "ts": "14-09-2026, 11:34:07 a. m.",
     "tipo": "salida",
