@@ -1,5 +1,14 @@
 [
   {
+    "id": "1789573520284-e1l5k",
+    "ts": "16-09-2026, 12:45:20 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 1,
+    "servicio": "Pabellón Quirúrgico",
+    "fecha": "2026-09-16"
+  },
+  {
     "id": "1789561297174-ytr0h",
     "ts": "16-09-2026, 9:21:37 a. m.",
     "tipo": "salida",
