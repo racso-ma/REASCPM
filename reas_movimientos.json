@@ -1,5 +1,41 @@
 [
   {
+    "id": "1790000240742-9y9by",
+    "ts": "21-09-2026, 11:17:20 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 3,
+    "servicio": "Hospitalizados 3°",
+    "fecha": "2026-09-21"
+  },
+  {
+    "id": "1790000240742-4w2mc",
+    "ts": "21-09-2026, 11:17:20 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80ro_farm",
+    "cantidad": 37,
+    "servicio": "Hospitalizados 3°",
+    "fecha": "2026-09-21"
+  },
+  {
+    "id": "1790000240742-9exyw",
+    "ts": "21-09-2026, 11:17:20 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 25,
+    "servicio": "Hospitalizados 3°",
+    "fecha": "2026-09-21"
+  },
+  {
+    "id": "1790000240742-fgp8z",
+    "ts": "21-09-2026, 11:17:20 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa60am",
+    "cantidad": 50,
+    "servicio": "Hospitalizados 3°",
+    "fecha": "2026-09-21"
+  },
+  {
     "id": "1790000182214-lijqu",
     "ts": "21-09-2026, 11:16:22 a. m.",
     "tipo": "salida",
