@@ -1,5 +1,14 @@
 [
   {
+    "id": "1790000182214-lijqu",
+    "ts": "21-09-2026, 11:16:22 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 4,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-09-21"
+  },
+  {
     "id": "1789573520284-e1l5k",
     "ts": "16-09-2026, 12:45:20 p. m.",
     "tipo": "salida",
