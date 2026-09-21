@@ -1,5 +1,14 @@
 [
   {
+    "id": "1790013409427-6gkwl",
+    "ts": "21-09-2026, 2:56:49 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 25,
+    "servicio": "Recuperación",
+    "fecha": "2026-09-21"
+  },
+  {
     "id": "1790000240742-9y9by",
     "ts": "21-09-2026, 11:17:20 a. m.",
     "tipo": "salida",
