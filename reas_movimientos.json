@@ -1,5 +1,13 @@
 [
   {
+    "id": "1790097303344-tm3mi",
+    "ts": "22-09-2026, 2:15:03 p. m.",
+    "tipo": "ajuste",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": -5,
+    "fecha": "2026-09-22"
+  },
+  {
     "id": "1790097295024-e8ovf",
     "ts": "22-09-2026, 2:14:55 p. m.",
     "tipo": "ajuste",
