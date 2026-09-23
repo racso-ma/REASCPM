@@ -1,5 +1,14 @@
 [
   {
+    "id": "1790166819168-einms",
+    "ts": "23-09-2026, 9:33:39 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 25,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-09-23"
+  },
+  {
     "id": "1790101691064-3vpuk",
     "ts": "22-09-2026, 3:28:11 p. m.",
     "tipo": "salida",
