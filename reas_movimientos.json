@@ -1,5 +1,14 @@
 [
   {
+    "id": "1790361502242-xzmun",
+    "ts": "25-09-2026, 3:38:22 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 25,
+    "servicio": "Laboratorio",
+    "fecha": "2026-09-25"
+  },
+  {
     "id": "1790188804658-q25cg",
     "ts": "23-09-2026, 3:40:04 p. m.",
     "tipo": "salida",
