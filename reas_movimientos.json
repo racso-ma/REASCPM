@@ -1,5 +1,13 @@
 [
   {
+    "id": "1790621035117-3tyj5",
+    "ts": "28-09-2026, 3:43:55 p. m.",
+    "tipo": "ajuste",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": -25,
+    "fecha": "2026-09-28"
+  },
+  {
     "id": "1790621028693-fovpa",
     "ts": "28-09-2026, 3:43:48 p. m.",
     "tipo": "salida",
