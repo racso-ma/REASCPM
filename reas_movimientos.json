@@ -1,5 +1,23 @@
 [
   {
+    "id": "1790620974173-194jt",
+    "ts": "28-09-2026, 3:42:54 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80ro_farm",
+    "cantidad": 50,
+    "servicio": "Pabellón Ambulatorio",
+    "fecha": "2026-09-28"
+  },
+  {
+    "id": "1790620974173-4td3x",
+    "ts": "28-09-2026, 3:42:54 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 50,
+    "servicio": "Pabellón Ambulatorio",
+    "fecha": "2026-09-28"
+  },
+  {
     "id": "1790604964618-i7dx2",
     "ts": "28-09-2026, 11:16:04 a. m.",
     "tipo": "salida",
