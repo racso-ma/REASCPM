@@ -1,5 +1,14 @@
 [
   {
+    "id": "1790604964618-i7dx2",
+    "ts": "28-09-2026, 11:16:04 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 25,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-09-28"
+  },
+  {
     "id": "1790599940820-cff60",
     "ts": "28-09-2026, 9:52:20 a. m.",
     "tipo": "salida",
