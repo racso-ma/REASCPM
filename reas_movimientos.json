@@ -1,5 +1,14 @@
 [
   {
+    "id": "1791383371741-ts47p",
+    "ts": "07-10-2026, 11:29:31 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 3,
+    "servicio": "UPC",
+    "fecha": "2026-10-07"
+  },
+  {
     "id": "1791374158010-4hnnx",
     "ts": "07-10-2026, 8:55:58 a. m.",
     "tipo": "salida",
