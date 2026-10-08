@@ -1,5 +1,14 @@
 [
   {
+    "id": "1791476563914-c4qmo",
+    "ts": "08-10-2026, 1:22:43 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa65ro_pel",
+    "cantidad": 50,
+    "servicio": "Esterilización",
+    "fecha": "2026-10-08"
+  },
+  {
     "id": "1791472256750-yopf5",
     "ts": "08-10-2026, 12:10:56 p. m.",
     "tipo": "ajuste",
