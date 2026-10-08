@@ -1,5 +1,14 @@
 [
   {
+    "id": "1791466616883-bc949",
+    "ts": "08-10-2026, 10:36:56 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 25,
+    "servicio": "Laboratorio",
+    "fecha": "2026-10-08"
+  },
+  {
     "id": "1791397416668-0b2db",
     "ts": "07-10-2026, 3:23:36 p. m.",
     "tipo": "salida",
