@@ -1,5 +1,14 @@
 [
   {
+    "id": "1791567518723-4yt1z",
+    "ts": "09-10-2026, 2:38:38 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 30,
+    "servicio": "UPC",
+    "fecha": "2026-10-09"
+  },
+  {
     "id": "1791476563914-c4qmo",
     "ts": "08-10-2026, 1:22:43 p. m.",
     "tipo": "salida",
