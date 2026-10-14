@@ -1,5 +1,23 @@
 [
   {
+    "id": "1792005315438-jdvm1",
+    "ts": "14-10-2026, 4:15:15 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 2,
+    "servicio": "Urgencia",
+    "fecha": "2026-10-14"
+  },
+  {
+    "id": "1792005315437-94htv",
+    "ts": "14-10-2026, 4:15:15 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 50,
+    "servicio": "Urgencia",
+    "fecha": "2026-10-14"
+  },
+  {
     "id": "1791919455091-3bzhs",
     "ts": "13-10-2026, 4:24:15 p. m.",
     "tipo": "salida",
