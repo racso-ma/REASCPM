@@ -1,5 +1,23 @@
 [
   {
+    "id": "1792071955144-148k3",
+    "ts": "15-10-2026, 10:45:55 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 25,
+    "servicio": "Laboratorio",
+    "fecha": "2026-10-15"
+  },
+  {
+    "id": "1792071953464-uqli4",
+    "ts": "15-10-2026, 10:45:53 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 25,
+    "servicio": "Laboratorio",
+    "fecha": "2026-10-15"
+  },
+  {
     "id": "1792005315438-jdvm1",
     "ts": "14-10-2026, 4:15:15 p. m.",
     "tipo": "salida",
