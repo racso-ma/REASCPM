@@ -1,5 +1,14 @@
 [
   {
+    "id": "1792154657022-l9557",
+    "ts": "16-10-2026, 9:44:17 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa60am",
+    "cantidad": 50,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-10-16"
+  },
+  {
     "id": "1792087338074-95ip5",
     "ts": "15-10-2026, 3:02:18 p. m.",
     "tipo": "ajuste",
