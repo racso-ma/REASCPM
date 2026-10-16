@@ -1,5 +1,14 @@
 [
   {
+    "id": "1792155139631-ewf4t",
+    "ts": "16-10-2026, 9:52:19 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro01ro",
+    "cantidad": 3,
+    "servicio": "Gastroscopia",
+    "fecha": "2026-10-16"
+  },
+  {
     "id": "1792155112864-2rcdc",
     "ts": "16-10-2026, 9:51:52 a. m.",
     "tipo": "salida",
