@@ -1,5 +1,14 @@
 [
   {
+    "id": "1792520576923-41boa",
+    "ts": "20-10-2026, 3:22:56 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa60am",
+    "cantidad": 150,
+    "servicio": "Pabellón Quirúrgico",
+    "fecha": "2026-10-20"
+  },
+  {
     "id": "1792513546703-f6cdi",
     "ts": "20-10-2026, 1:25:46 p. m.",
     "tipo": "salida",
