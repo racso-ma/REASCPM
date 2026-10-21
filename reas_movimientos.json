@@ -1,5 +1,14 @@
 [
   {
+    "id": "1792585053230-9szja",
+    "ts": "21-10-2026, 9:17:33 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 2,
+    "servicio": "Proc. 4° piso",
+    "fecha": "2026-10-21"
+  },
+  {
     "id": "1792585011431-cggxx",
     "ts": "21-10-2026, 9:16:51 a. m.",
     "tipo": "salida",
