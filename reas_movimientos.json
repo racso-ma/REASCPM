@@ -1,5 +1,14 @@
 [
   {
+    "id": "1792609401846-b56jy",
+    "ts": "21-10-2026, 4:03:21 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 2,
+    "servicio": "Urgencia",
+    "fecha": "2026-10-21"
+  },
+  {
     "id": "1792585053230-9szja",
     "ts": "21-10-2026, 9:17:33 a. m.",
     "tipo": "salida",
