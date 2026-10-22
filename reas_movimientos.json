@@ -1,5 +1,14 @@
 [
   {
+    "id": "1792697240560-zkl4e",
+    "ts": "22-10-2026, 4:27:20 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa60am",
+    "cantidad": 25,
+    "servicio": "Laboratorio",
+    "fecha": "2026-10-22"
+  },
+  {
     "id": "1792609401846-b56jy",
     "ts": "21-10-2026, 4:03:21 p. m.",
     "tipo": "salida",
