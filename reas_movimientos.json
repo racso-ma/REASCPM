@@ -1,5 +1,32 @@
 [
   {
+    "id": "1792766293164-y8q04",
+    "ts": "23-10-2026, 11:38:13 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80ro_farm",
+    "cantidad": 50,
+    "servicio": "UPC",
+    "fecha": "2026-10-23"
+  },
+  {
+    "id": "1792766293164-8t79x",
+    "ts": "23-10-2026, 11:38:13 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 50,
+    "servicio": "UPC",
+    "fecha": "2026-10-23"
+  },
+  {
+    "id": "1792766293164-0isz1",
+    "ts": "23-10-2026, 11:38:13 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 3,
+    "servicio": "UPC",
+    "fecha": "2026-10-23"
+  },
+  {
     "id": "1792697240560-zkl4e",
     "ts": "22-10-2026, 4:27:20 p. m.",
     "tipo": "salida",
