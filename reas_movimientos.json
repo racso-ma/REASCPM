@@ -1,5 +1,14 @@
 [
   {
+    "id": "1793123600414-8svf1",
+    "ts": "27-10-2026, 2:53:20 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 4,
+    "servicio": "Imagenología",
+    "fecha": "2026-10-27"
+  },
+  {
     "id": "1793040563005-vc0zu",
     "ts": "26-10-2026, 3:49:23 p. m.",
     "tipo": "salida",
