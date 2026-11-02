@@ -1,5 +1,23 @@
 [
   {
+    "id": "1793646324524-b0dmz",
+    "ts": "02-11-2026, 4:05:24 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80ro_farm",
+    "cantidad": 50,
+    "servicio": "Recuperación",
+    "fecha": "2026-11-02"
+  },
+  {
+    "id": "1793646324524-9a9mf",
+    "ts": "02-11-2026, 4:05:24 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 50,
+    "servicio": "Recuperación",
+    "fecha": "2026-11-02"
+  },
+  {
     "id": "1793642124627-s44qm",
     "ts": "02-11-2026, 2:55:24 p. m.",
     "tipo": "salida",
