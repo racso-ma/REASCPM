@@ -1,5 +1,14 @@
 [
   {
+    "id": "1793650829875-g4gth",
+    "ts": "02-11-2026, 5:20:29 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 3,
+    "servicio": "Recuperación",
+    "fecha": "2026-11-02"
+  },
+  {
     "id": "1793646324524-b0dmz",
     "ts": "02-11-2026, 4:05:24 p. m.",
     "tipo": "salida",
