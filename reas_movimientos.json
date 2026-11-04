@@ -1,5 +1,14 @@
 [
   {
+    "id": "1793818302674-c4evg",
+    "ts": "04-11-2026, 3:51:42 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 2,
+    "servicio": "Urgencia",
+    "fecha": "2026-11-04"
+  },
+  {
     "id": "1793818293795-mis8p",
     "ts": "04-11-2026, 3:51:33 p. m.",
     "tipo": "salida",
