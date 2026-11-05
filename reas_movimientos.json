@@ -1,5 +1,14 @@
 [
   {
+    "id": "1793906147134-3upqp",
+    "ts": "05-11-2026, 4:15:47 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 2,
+    "servicio": "Oftalmontt",
+    "fecha": "2026-11-05"
+  },
+  {
     "id": "1793895472728-l2p52",
     "ts": "05-11-2026, 1:17:52 p. m.",
     "tipo": "salida",
