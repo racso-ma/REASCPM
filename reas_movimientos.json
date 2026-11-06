@@ -1,5 +1,15 @@
 [
   {
+    "id": "1793966196498-lxdqt",
+    "ts": "06-11-2026, 8:56:36 a. m.",
+    "tipo": "entrada",
+    "insumoId": "carro50amarillo",
+    "cantidad": 2,
+    "guia": "341968",
+    "oc": "19913",
+    "fecha": "2026-11-06"
+  },
+  {
     "id": "1793966167114-ftxja",
     "ts": "06-11-2026, 8:56:07 a. m.",
     "tipo": "entrada",
