@@ -1,5 +1,23 @@
 [
   {
+    "id": "1794234562284-aqbi7",
+    "ts": "09-11-2026, 11:29:22 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 3,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-11-09"
+  },
+  {
+    "id": "1794234562284-uo0y2",
+    "ts": "09-11-2026, 11:29:22 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am_inc",
+    "cantidad": 50,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-11-09"
+  },
+  {
     "id": "1793993280676-e8b9q",
     "ts": "06-11-2026, 4:28:00 p. m.",
     "tipo": "ajuste",
