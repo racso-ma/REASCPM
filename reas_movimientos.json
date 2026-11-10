@@ -1,5 +1,21 @@
 [
   {
+    "id": "1794314142474-jvgvh",
+    "ts": "10-11-2026, 9:35:42 a. m.",
+    "tipo": "ajuste",
+    "insumoId": "bolsa80am",
+    "cantidad": 0,
+    "fecha": "2026-11-10"
+  },
+  {
+    "id": "1794314142007-wti1n",
+    "ts": "10-11-2026, 9:35:42 a. m.",
+    "tipo": "ajuste",
+    "insumoId": "bolsa80am",
+    "cantidad": 300,
+    "fecha": "2026-11-10"
+  },
+  {
     "id": "1794314138962-z6l62",
     "ts": "10-11-2026, 9:35:38 a. m.",
     "tipo": "ajuste",
