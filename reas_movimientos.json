@@ -1,5 +1,14 @@
 [
   {
+    "id": "1794487679914-bcwqv",
+    "ts": "12-11-2026, 9:47:59 a. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 100,
+    "servicio": "Proc. 4° piso",
+    "fecha": "2026-11-12"
+  },
+  {
     "id": "1794419440243-cvtic",
     "ts": "11-11-2026, 2:50:40 p. m.",
     "tipo": "salida",
