@@ -1,5 +1,23 @@
 [
   {
+    "id": "1794846540575-0aot3",
+    "ts": "16-11-2026, 1:29:00 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa60am",
+    "cantidad": 50,
+    "servicio": "Hospitalizados 3°",
+    "fecha": "2026-11-13"
+  },
+  {
+    "id": "1794846540575-1mfds",
+    "ts": "16-11-2026, 1:29:00 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 50,
+    "servicio": "Hospitalizados 3°",
+    "fecha": "2026-11-13"
+  },
+  {
     "id": "1794579420971-dy57i",
     "ts": "13-11-2026, 11:17:00 a. m.",
     "tipo": "salida",
