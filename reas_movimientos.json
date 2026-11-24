@@ -1,5 +1,14 @@
 [
   {
+    "id": "1795525456041-z5rnc",
+    "ts": "24-11-2026, 10:04:16 a. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 3,
+    "servicio": "Hospitalizados 2°",
+    "fecha": "2026-11-24"
+  },
+  {
     "id": "1795202895074-cev2v",
     "ts": "20-11-2026, 4:28:15 p. m.",
     "tipo": "entrada",
