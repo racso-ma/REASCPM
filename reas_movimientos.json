@@ -1,5 +1,23 @@
 [
   {
+    "id": "1795631573070-5rrov",
+    "ts": "25-11-2026, 3:32:53 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80ro_farm",
+    "cantidad": 50,
+    "servicio": "Urgencia",
+    "fecha": "2026-11-25"
+  },
+  {
+    "id": "1795631573070-aq84f",
+    "ts": "25-11-2026, 3:32:53 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 50,
+    "servicio": "Urgencia",
+    "fecha": "2026-11-25"
+  },
+  {
     "id": "1795547466709-sj046",
     "ts": "24-11-2026, 4:11:06 p. m.",
     "tipo": "salida",
