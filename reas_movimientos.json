@@ -1,5 +1,14 @@
 [
   {
+    "id": "1795631968460-a6dgi",
+    "ts": "25-11-2026, 3:39:28 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 50,
+    "servicio": "Gastroscopia",
+    "fecha": "2026-11-25"
+  },
+  {
     "id": "1795631573070-5rrov",
     "ts": "25-11-2026, 3:32:53 p. m.",
     "tipo": "salida",
