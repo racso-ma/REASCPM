@@ -1,5 +1,14 @@
 [
   {
+    "id": "1795707060021-tovup",
+    "ts": "26-11-2026, 12:31:00 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 15,
+    "servicio": "Laboratorio",
+    "fecha": "2026-11-25"
+  },
+  {
     "id": "1795631968460-a6dgi",
     "ts": "25-11-2026, 3:39:28 p. m.",
     "tipo": "salida",
