@@ -1,5 +1,23 @@
 [
   {
+    "id": "1795805486282-p1qks",
+    "ts": "27-11-2026, 3:51:26 p. m.",
+    "tipo": "salida",
+    "insumoId": "pro15ro",
+    "cantidad": 2,
+    "servicio": "Hospitalizados 3°",
+    "fecha": "2026-11-27"
+  },
+  {
+    "id": "1795805486282-ml2nz",
+    "ts": "27-11-2026, 3:51:26 p. m.",
+    "tipo": "salida",
+    "insumoId": "bolsa80am",
+    "cantidad": 50,
+    "servicio": "Hospitalizados 3°",
+    "fecha": "2026-11-27"
+  },
+  {
     "id": "1795707060021-tovup",
     "ts": "26-11-2026, 12:31:00 p. m.",
     "tipo": "salida",
